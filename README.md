@@ -89,14 +89,14 @@ Le proxy est accessible via ws://localhost:8080 qui fait le lien entre WebSocket
 ## Fonctionnalités supplémentaires
 
 ### 1. Historique des messages
-- Ajoute d' une méthode `GetChatHistory` dans `chat.proto`
-- Stockage des messages en mémoire dans server.js
-- Adaptation de proxy pour gérer cette nouvelle méthode
+- Ajout de la méthode `GetChatHistory` dans `chat.proto`
+- Mémorisation des messages côté serveur
+- Mise à jour du proxy pour supporter cette fonctionnalité
 
 ### 2. Client Web 
-Une page HTML avec :
-- Formulaire d'envoi de messages
-- Affichage des messages en temps réel
-- Connexion WebSocket à `ws://localhost:8080`
-- Fonctionnement: Ouvrir client.html dans un navigateur et tester l'envoi de messages.
+Une page HTML simple permettant :
+- D’écrire et envoyer des messages
+- De voir les messages reçus en temps réel
+- Connexion directe au proxy via WebSocket `ws://localhost:8080`
+- Pour tester : ouvrir client.html dans un navigateur
 
